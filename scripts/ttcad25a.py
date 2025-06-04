@@ -13,9 +13,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMP_DIR = os.path.join(SCRIPT_DIR, "temp")
 FINAL_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../oas"))
 
-# GDS run: https://github.com/TinyTapeout/tinytapeout-cad-25a/actions/runs/15280950609
-# Precheck run: https://github.com/TinyTapeout/tinytapeout-cad-25a/actions/runs/15282625861
-commit_hash = "290f86d"
+# GDS run: https://github.com/TinyTapeout/tinytapeout-cad-25a/actions/runs/15449251551
+# Precheck run: https://github.com/TinyTapeout/tinytapeout-cad-25a/actions/runs/15450978349
+commit_hash = "1537f3a5"
 
 top_cell_name = f"{SHUTTLE_ID}_{commit_hash}"
 temp_oas = os.path.join(TEMP_DIR, f"{top_cell_name}.oas")
