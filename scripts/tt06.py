@@ -38,6 +38,14 @@ user_layout.read(temp_oas)
 top_cell = layout.top_cell()
 top_cell.name = top_cell_name
 
+# Cadence won't allow "/" in cell names, so we need to rename them:
+for cell in layout.each_cell():
+   if "/" in cell.name:
+      new_name = cell.name.replace("/", "__")
+      print(f"Cell {cell.name} has '/' in its name")
+      print(f"  => renaming to {new_name}")
+      cell.name = new_name
+
 # Remove the seal ring
 print(f"Removing {SEAL_RING_CELL} from {temp_oas}")
 seal_ring_cell = layout.cell(SEAL_RING_CELL)
