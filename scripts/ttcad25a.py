@@ -4,6 +4,7 @@
 
 import os
 import klayout.db as pya
+from map_fill import map_fill_layers
 
 SHUTTLE_ID = "ttcad25a"
 SEAL_RING_CELL = "advSeal_6um_gen"
@@ -33,6 +34,9 @@ print(f"Removing {SEAL_RING_CELL} from {temp_oas}")
 seal_ring_cell = layout.cell(SEAL_RING_CELL)
 assert seal_ring_cell is not None, f"Cell {SEAL_RING_CELL} not found in {temp_oas}"
 seal_ring_cell.prune_cell()
+
+print(f"Mapping fill layers...")
+map_fill_layers(layout)
 
 # Write the modified library
 print(f"Writing modified library to {final_oas}")
