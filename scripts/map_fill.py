@@ -11,6 +11,12 @@ fill_layer_map = {
     "cmm3.fill": ((34, 28), (70, 99)),
     "cmm4.fill": ((51, 28), (71, 99)),
     "cmm5.fill": ((59, 28), (72, 99)),
+    "cfom.waffledrop": ((22, 24), (65, 98)),
+    "cmm1.waffledrop": ((62, 24), (68, 98)),
+    "cmm2.waffledrop": ((105, 52), (69, 98)),
+    "cmm3.waffledrop": ((107, 24), (70, 98)),
+    "cmm4.waffledrop": ((112, 4), (71, 98)),
+    "cmm5.waffledrop": ((117, 4), (72, 98)),
 }
 
 
